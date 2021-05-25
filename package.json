@@ -1,0 +1,35 @@
+{
+  "name": "news-blog-backend",
+  "version": "1.0.0",
+  "description": "The backend api for the news-blog project.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsc && nodemon dist/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hoxtygen/news-blog-backend.git"
+  },
+  "keywords": [
+    "nodejs",
+    "typescript",
+    "postgresql",
+    "knex"
+  ],
+  "author": "Wasiu Idowu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Hoxtygen/news-blog-backend/issues"
+  },
+  "homepage": "https://github.com/Hoxtygen/news-blog-backend#readme",
+  "devDependencies": {
+    "@types/express": "github:types/express",
+    "nodemon": "^2.0.7",
+    "tslint": "^6.1.3",
+    "typescript": "^4.2.4"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
