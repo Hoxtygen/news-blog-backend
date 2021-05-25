@@ -1,7 +1,9 @@
 import express from "express";
+import dotenv from "dotenv"
+dotenv.config();
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 4001;
 app.get("/", (req: Request, res) => {
     res.status(200).json({
         message: "Welcome to news blog"
