@@ -5,6 +5,7 @@ import cors from "cors";
 dotenv.config();
 
 const app:Application = express();
+const port = process.env.PORT || 4001;
 
 app.use(helmet());
 app.use(cors());
@@ -12,7 +13,6 @@ app.use(cors());
 
 
 
-const port = process.env.PORT || 4001;
 app.get("/", (req: Request, res:Response) => {
     res.status(200).json({
         message: "Welcome to news blog"
