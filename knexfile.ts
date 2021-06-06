@@ -11,7 +11,7 @@ module.exports = {
     client: "postgresql",
     connection: {
       host: '127.0.0.1',
-      database: "newsblog_dev",
+      database: process.env.dev_database_url,
       user: process.env.db_username,
       password: process.env.db_password
     },

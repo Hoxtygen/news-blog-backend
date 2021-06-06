@@ -5,8 +5,11 @@
     "moduleResolution": "node",
     "target": "ES6",
     "sourceMap": true,
-    "outDir": "dist",
+    "outDir": "dist"
   },
-  "lib": ["es2015"]
-  // "lib": []
+  "lib": ["es2015"],
+  
+"exclude" : [
+    "node_modules"  /* exclude everything in  node_modules */
+]
 }
