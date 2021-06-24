@@ -2,6 +2,7 @@ import express, {Application, Request, Response}  from "express";
 import dotenv from "dotenv"
 import helmet from "helmet"
 import cors from "cors";
+import router from "./src/routes/index"
 dotenv.config();
 
 const app:Application = express();
@@ -18,6 +19,7 @@ app.get("/", (req: Request, res:Response) => {
         message: "Welcome to news blog"
     });
 });
+app.use('/api/v1/', router);
 
 app.listen(port, (err: any) => {
     if (err) {
@@ -25,3 +27,4 @@ app.listen(port, (err: any) => {
     }
     return console.log(`Server is listening on port ${port}`);
 })
+

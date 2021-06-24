@@ -10,8 +10,8 @@ module.exports = {
   development: {
     client: "postgresql",
     connection: {
-      host: '127.0.0.1',
-      database: process.env.dev_database_url,
+      // host: '127.0.0.1',
+      connectionString: process.env.dev_database_url,
       user: process.env.db_username,
       password: process.env.db_password
     },
@@ -22,7 +22,11 @@ module.exports = {
     migrations: {
       directory: './src/database/migrations'
 
-    }
+    }, 
+    seeds: {
+      directory: "./src/database/seeds"
+    },
+    useNullAsDefault: true,
   },
 
   staging: {
