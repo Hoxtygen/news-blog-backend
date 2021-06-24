@@ -5,8 +5,4 @@ const router = express.Router();
 
 router.get("/articles", ArticlesController.getArticles);
 
-
-
-
-
 export default router
